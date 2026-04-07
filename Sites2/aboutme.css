@@ -209,6 +209,9 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     
 }
 
+.pic1 {
+    padding-bottom: 2%;
+}
 #themeButton {
 
     margin-left: 2%;
@@ -240,3 +243,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 #themeButton:active {
     transform: scale(0.95); 
 }
+
+
+
+
