@@ -155,7 +155,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     color: rgb(189, 11, 233);
     
     margin-right: 2%;
-    
+
     transform: scale(1.5);
     border-radius: 12px 4px 12px 4px;
     text-shadow: purple;
@@ -173,36 +173,39 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 #picture1 {
 
-    width: 28%;
+    width: 35%;
     height: 100%;
 
-    margin-left: 65%;
+    margin-left: 10%;
     margin-top: 5%;
 
-    box-shadow: 4px 10px 15px rgba(235, 234, 236, 0.4);
+    opacity: 0.7;
+    
 }
 
 .light-mode #picture1 {
 
-    width: 28%;
+    width: 35%;
     height: 100%;
 
-    margin-left: 65%;
+    margin-left: 10%;
     margin-top: 5%;
 
-    box-shadow: 4px 10px 15px rgba(22, 22, 22, 0.4);
+    opacity: 0.7;
+
+    
 }
 
 #picture1:hover {
 
     transform: scale(1.1);
-    box-shadow: 8px 15px 20px rgba(235, 234, 236, 0.4);
+    
 }
 
 .light-mode #picture1:hover {
 
     transform: scale(1.1);
-    box-shadow: 8px 15px 20px rgba(20, 20, 20, 0.4);
+    
 }
 
 .social-links {
@@ -213,6 +216,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     width: 40px;
     height: 40px;
 
+    margin-top: 3%;
     margin-left: 2%;
     margin-right: 40%;
 
