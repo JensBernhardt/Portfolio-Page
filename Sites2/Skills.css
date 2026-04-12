@@ -102,6 +102,12 @@ h1 {
     color: #f3f5f8;
 }
 
+.light-mode h1 {
+
+    color: #000000;
+
+}
+
 .nav2 {
 
     display: flex;
@@ -231,6 +237,7 @@ h1 {
 
     margin-left: 30%;
     margin-top: 3%;
+    margin-bottom: 5%;
 
     line-height: 1.5;  
     width: 40%;
@@ -289,7 +296,7 @@ h1 {
     font-weight: 600;
     color: #000000;
     letter-spacing: 0.02em;
-    text-shadow: 2px 2px 4px rgba(245, 245, 245, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cv-skill-percent {
