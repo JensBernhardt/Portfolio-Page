@@ -167,6 +167,11 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     padding-right: 10px;
 }
 
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .pro {
 
     margin-top: 5%;
