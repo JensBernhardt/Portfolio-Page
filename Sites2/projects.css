@@ -15,10 +15,6 @@
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-h1 {
-    font-size: 20px;
-    margin-top: 20px;
-}
 
 #main1 {
     max-height: 100%;
@@ -171,100 +167,198 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     padding-right: 10px;
 }
 
-#picture1 {
+.pro {
 
-    width: 28%;
-    height: 100%;
-
-    margin-left: 65%;
     margin-top: 5%;
-
-    box-shadow: 4px 10px 15px rgba(235, 234, 236, 0.4);
+    text-align: center;
+    color: aliceblue;
 }
 
-.light-mode #picture1 {
-
-    width: 28%;
-    height: 100%;
-
-    margin-left: 65%;
+.proo {
+    
     margin-top: 5%;
-
-    box-shadow: 4px 10px 15px rgba(22, 22, 22, 0.4);
+    text-align: center;
+    color: aliceblue;
 }
 
-#picture1:hover {
-
-    transform: scale(1.1);
-    box-shadow: 8px 15px 20px rgba(235, 234, 236, 0.4);
+main {
+  min-height: auto;
 }
 
-.light-mode #picture1:hover {
-
-    transform: scale(1.1);
-    box-shadow: 8px 15px 20px rgba(20, 20, 20, 0.4);
+.projekt-karussell {
+  position: relative;
+  width: min(95vw, 1400px);
+  height: clamp(300px, 50vw, 800px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: -70px;
 }
 
-.social-links {
-
-    display: flex;
-    flex-direction:row;
-
-    width: 40px;
-    height: 40px;
-
-    margin-left: 2%;
-    margin-right: 40%;
-
-    box-shadow: 2px 5px 7px rgba(235, 234, 236, 0.4);
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.light-mode .social-links {
+.carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(240px, 35vw, 500px);
+  aspect-ratio: 16 / 10;
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  background-color: rgb(30, 30, 30);
+}
 
-    display: flex;
-    flex-direction:row;
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+}
 
-    width: 40px;
-    height: 40px;
+.projekt-text {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  color: white;
+  font-size: clamp(0.95rem, 1.2vw, 1.2rem);
+  font-weight: bold;
+  z-index: 3;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
 
-    margin-left: 2%;
-    margin-right: 40%;
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 45%);
+  z-index: 2;
+  pointer-events: none;
+}
 
-    padding-bottom: 2%;
+/* Mitte */
+.carousel-item.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+  pointer-events: auto;
+}
 
-    box-shadow: 2px 5px 7px rgba(19, 18, 19, 0);
+/* Links */
+.carousel-item.left {
+  transform: translate(-125%, -50%) scale(0.82);
+  opacity: 0.45;
+  z-index: 2;
+  pointer-events: auto;
+  filter: brightness(0.8);
+}
+
+/* Rechts */
+.carousel-item.right {
+  transform: translate(25%, -50%) scale(0.82);
+  opacity: 0.45;
+  z-index: 2;
+  pointer-events: auto;
+  filter: brightness(0.8);
+}
+
+/* Rest */
+.carousel-item.hidden {
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(42px, 4vw, 54px);
+  height: clamp(42px, 4vw, 54px);
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: clamp(20px, 2vw, 28px);
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.nav-btn.left {
+  left: 10px;
+}
+
+.nav-btn.right {
+  right: 10px;
+}
+
+@media (max-width: 900px) {
+  .projekt-karussell {
+    height: clamp(240px, 42vw, 420px);
+  }
+
+  .carousel-item {
+    width: clamp(200px, 34vw, 300px);
+  }
+
+  .carousel-item.left {
+    transform: translate(-112%, -50%) scale(0.78);
+  }
+
+  .carousel-item.right {
+    transform: translate(12%, -50%) scale(0.78);
+  }
+}
+
+@media (max-width: 700px) {
+  .projekt-karussell {
+    width: 96vw;
+    height: clamp(220px, 58vw, 340px);
+    margin: 1.5rem auto;
+  }
+
+  .carousel-item {
+    width: clamp(180px, 60vw, 250px);
+  }
+
+  .carousel-item.left {
+    transform: translate(-98%, -50%) scale(0.68);
+    opacity: 0.25;
+  }
+
+  .carousel-item.right {
+    transform: translate(-2%, -50%) scale(0.68);
+    opacity: 0.25;
+  }
+
+  .projekt-text {
+    left: 12px;
+    bottom: 10px;
+    font-size: clamp(0.85rem, 2.8vw, 1rem);
+  }
 }
 
 
-#s1:hover{
-
-transform: scale(1.2);
-
-}
-
-#s1:active {
-transform: scale(0.95); 
-}
-
-#s2:hover{
-
-transform: scale(1.2);
-
-}
-
-#s2:active {
-transform: scale(0.95); 
-}
-
-#s3:hover{
-
-transform: scale(1.2);
-
-}
-
-#s3:active {
-    transform: scale(0.95); 
-}
 
 #themeButton {
 
@@ -296,4 +390,80 @@ transform: scale(1.2);
 
 #themeButton:active {
     transform: scale(0.95); 
+}
+
+/* Smooth erweitern */
+.carousel-item {
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    opacity 0.5s ease,
+    filter 0.5s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Mittleres Bild */
+.carousel-item.active:hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: 4;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item.active:active {
+  transform: translate(-50%, -50%) scale(0.97);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Linkes Bild */
+.carousel-item.left:hover {
+  transform: translate(-125%, -50%) scale(0.88);
+  opacity: 0.7;
+  z-index: 4;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
+}
+
+.carousel-item.left:active {
+  transform: translate(-125%, -50%) scale(0.78);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Rechtes Bild */
+.carousel-item.right:hover {
+  transform: translate(25%, -50%) scale(0.88);
+  opacity: 0.7;
+  z-index: 4;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
+}
+
+.carousel-item.right:active {
+  transform: translate(25%, -50%) scale(0.78);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Text bewegt sich leicht mit */
+.carousel-item .projekt-text {
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .projekt-text {
+  transform: translateY(-4px);
+}
+
+/* Hover Effekt */
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Klick Effekt (Button wird gedrückt) */
+.nav-btn:active {
+  transform: translateY(-50%) scale(0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: leichter Glow beim Hover */
+.nav-btn:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2),
+              0 8px 20px rgba(0, 0, 0, 0.5);
 }

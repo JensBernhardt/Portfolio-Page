@@ -22,7 +22,7 @@
 
             <button id="themeButton">☀️</button>
 
-            <a  class="nav2">Jens Peter Bernhardt</a>
+            <a  href="aboutme.html" class="nav2">Jens Peter Bernhardt</a>
 
             
             <a href="../Main/index.html" class="nav3">Home</a>
@@ -40,25 +40,54 @@
 
         <main>
 
-            <img id="picture1" src="../Pictures/jens.png" alt="Main Picture">
+            <h1 class="pro">Projektauswahl:</h1>
+            <p class="proo">Hier könnt ihr auf Übersichtsseiten meiner Projekt gehen</p>
+
+  <div class="projekt-karussell">
+  <button class="nav-btn left" id="prevBtn">&#10094;</button>
+
+  <div class="carousel-track">
+    <a class="carousel-item" href="projekt1.html" target="_blank">
+      <img src="../Project Pictures/kochhintergrund.jpg" alt="Projekt 1">
+      <span class="projekt-text">Projekt: Gastro</span>
+    </a>
+
+    <a class="carousel-item" href="projekt2.html" target="_blank">
+      <img src="../Project Pictures/me.png" alt="Projekt 2">
+      <span class="projekt-text">Projekt: Protfolio Page</span>
+    </a>
+
+    <a class="carousel-item" href="projekt3.html" target="_blank">
+      <img src="../Project Pictures/tafel.jpg" alt="Projekt 3">
+      <span class="projekt-text">Projekt: Soon</span>
+    </a>
+
+    <a class="carousel-item" href="projekt4.html" target="_blank">
+      <img src="../Project Pictures/tafel.jpg" alt="Projekt 4">
+      <span class="projekt-text">Projekt: Soon</span>
+    </a>
+
+    <a class="carousel-item" href="projekt5.html" target="_blank">
+      <img src="../Project Pictures/tafel.jpg" alt="Projekt 5">
+      <span class="projekt-text">Projekt: Soon</span>
+    </a>
+  </div>
+
+  <button class="nav-btn right" id="nextBtn">&#10095;</button>
+</div>
 
         </main>
 
 
         <footer>
 
-        <div class="social-links">
-
-        <a id="s1" class="social-links" href="https://github.com/deinname" target="_blank"><img src="../Pictures/github.png" alt="Logo" /></a>
-        <a id="s2" class="social-links" href="https://linkedin.com/in/deinname" target="_blank"><img src="../Pictures/linkedin.png" alt="Logo" /></a>
-        <a id="s3" class="social-links" href="mailto:bernhardtjens86@gmail.com"><img src="../Pictures/email.png" alt="Logo" /></a>
-
-        </div>
+        
 
         </footer>
     
         </div>
 
+        <script src="../JavaScript/dom2Carousel.js"></script>
         <script src="../JavaScript/dom.js"></script>
 </body>
 </html>
