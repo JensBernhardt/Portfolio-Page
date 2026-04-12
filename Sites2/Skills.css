@@ -98,6 +98,10 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     text-shadow: purple;
 }
 
+h1 {
+    color: #f3f5f8;
+}
+
 .nav2 {
 
     display: flex;
@@ -285,7 +289,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     font-weight: 600;
     color: #000000;
     letter-spacing: 0.02em;
-    
+    text-shadow: 2px 2px 4px rgba(245, 245, 245, 0.5);
 }
 
 .cv-skill-percent {
