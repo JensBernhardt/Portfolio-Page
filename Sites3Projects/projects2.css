@@ -27,19 +27,84 @@
     background-color: rgb(82, 80, 80);
 }
 
+.mainp {
+
+    min-height: 87vh;
+    max-width: 100%;  
+
+    background-image:url(../Pictures/projd.png);
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+
+    padding-top: 90px;
+}
+
+.light-mode .mainp {
+
+    min-height: 87vh;
+    max-width: 100%;  
+
+    background-image:url(../Pictures/projw.png);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+
+    padding-top: 90px;
+}
+
+.pro {
+
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.452);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px 20px 10px 30px;
+    padding: 15px;
+    color: white;
+
+    margin-left: 40%;
+    margin-top: 2%;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.light-mode .pro {
+
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.644);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px 10px 20px 5px;
+    padding: 15px;
+    color: black;
+
+    margin-left: 40%;
+    margin-top: 2%;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 #nav1 {
+
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: center; 
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
 
     cursor: pointer;
 
     padding: 10px 20px;
     
     box-shadow: 4px 4px 10px rgba(241, 239, 239, 0.4);
-    background-color: rgb(17, 17, 17); 
+
+    background-image:url(../Pictures/bla.png);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
 }
 
 .light-mode #nav1 { 
@@ -54,7 +119,11 @@
     padding: 10px 20px;
     
     box-shadow: 4px 4px 10px rgba(26, 25, 25, 0.4);
-    background-color: rgb(105, 103, 103); 
+
+    background-image:url(../Pictures/wh.png);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
 }
 
 #nav1:hover {
@@ -85,7 +154,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .nav:hover {
 
-    color: rgb(189, 11, 233);
+    color: rgb(11, 26, 233);
     
     margin-left: 2%;
     margin-right: 2%;
@@ -93,7 +162,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
     transform: scale(1.5);
     border-radius: 12px 4px 12px 4px;
-    text-shadow: purple;
+    text-shadow: rgb(12, 15, 209);
 }
 
 .nav2 {
@@ -112,11 +181,11 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .nav2:hover {
 
-    color: rgb(189, 11, 233);
+    color: rgb(11, 15, 233);
     
     transform: scale(1.5);
     border-radius: 12px 4px 12px 4px;
-    text-shadow: purple;
+    text-shadow: rgb(12, 25, 211);
 }
 
 .light-mode .nav2 {
@@ -130,6 +199,15 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     font-size: clamp(0.5rem, 1.5vw, 2.0rem); 
     color: rgb(3, 3, 3);
 
+}
+
+.light-mode .nav2:hover {
+
+    color: rgb(5, 21, 240);
+    
+    transform: scale(1.1);
+    border-radius: 12px 4px 12px 4px;
+    text-shadow: rgb(8, 4, 252);
 }
 
 .nav3 {
@@ -150,13 +228,13 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .nav3:hover {
 
-    color: rgb(189, 11, 233);
+    color: rgb(11, 15, 233);
     
     margin-right: 2%;
     
     transform: scale(1.5);
     border-radius: 12px 4px 12px 4px;
-    text-shadow: purple;
+    text-shadow: rgb(11, 15, 218);
 }
 
 .nav-logo img {
@@ -172,14 +250,6 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 p {
   margin-left: 10%;
   margin-right: 10%;
-}
-
-.pro {
-
-    margin-top: 5%;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif;
 }
 
 .proo {
