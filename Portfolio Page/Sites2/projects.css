@@ -89,11 +89,11 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .nav:hover {
 
-    color: rgb(189, 11, 233);
-    
-    transform: scale(1.5);
+    color: rgb(0, 26, 255);
+
+    transform: scale(1.1);
     border-radius: 12px 4px 12px 4px;
-    text-shadow: purple;
+    text-shadow: rgb(4, 50, 255);
 }
 
 .nav2 {
@@ -139,12 +139,14 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .nav3:hover {
 
-    color: rgb(189, 11, 233);
+    color: rgb(10, 7, 236);
     
-    transform: scale(1.5);
+    
+    transform: scale(1.1);
     border-radius: 12px 4px 12px 4px;
-    text-shadow: purple;
+    text-shadow: rgb(6, 10, 231);
 }
+
 
 .nav-logo img {
     width: 40px;

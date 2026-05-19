@@ -124,16 +124,13 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .nav:hover {
 
-    color: rgb(26, 11, 233);
-    
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 1%;
+    color: rgb(0, 26, 255);
 
-    transform: scale(1.5);
+    transform: scale(1.1);
     border-radius: 12px 4px 12px 4px;
-    text-shadow: rgb(11, 7, 218);
+    text-shadow: rgb(4, 50, 255);
 }
+
 
 .nav2 {
 
@@ -198,14 +195,14 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .nav3:hover {
 
-    color: rgb(15, 11, 233);
+    color: rgb(10, 7, 236);
     
-    margin-right: 2%;
-
-    transform: scale(1.5);
+    
+    transform: scale(1.1);
     border-radius: 12px 4px 12px 4px;
-    text-shadow: rgb(7, 26, 204);
+    text-shadow: rgb(6, 10, 231);
 }
+
 
 .nav-logo img {
     width: 40px;
