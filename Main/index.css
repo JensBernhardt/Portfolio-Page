@@ -32,31 +32,7 @@ h1 {
     
 }
 
-.mainp {
 
-    min-height: 87vh;
-    max-width: 100%;  
-
-    background-image:url(../Pictures/maind.png);
-    background-size: cover;      
-    background-position: center;  
-    background-repeat: no-repeat;
-
-    padding-top: 90px;
-}
-
-.light-mode .mainp {
-
-    min-height: 87vh;
-    max-width: 100%;  
-
-    background-image:url(../Pictures/mainw.png);
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat; 
-
-    padding-top: 90px;
-}
 
 #nav1 {
     display: flex;
@@ -217,36 +193,110 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     padding-right: 10px;
 }
 
+.mainp {
+
+    min-height: 94.6vh;
+    max-width: 100%;  
+
+    background-image:url(../Pictures/maind.png);
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+
+    position: relative;
+}
 
 
-.social-links {
+
+.light-mode .mainp {
+
+    min-height: 94.6vh;
+    max-width: 100%;  
+
+    background-image:url(../Pictures/mainw.png);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+
+    position: relative;
+}
+
+.social-container{
+
+    position: absolute;
+    top: 92%;
+    left: 0.5%;
 
     display: flex;
-    flex-direction:row;
+    gap: 20px;
+
+    
+}
+
+.light-mode .social-container{
+
+    position: absolute;
+    top: 92%;
+    left: 0.5%;
+
+    display: flex;
+    gap: 20px;
+}
+
+.social-links{
 
     width: 80px;
     height: 80px;
 
-    margin-top: 470px;
+    display: block;
 
-    margin-left: 1%;
-    margin-right: 10%;
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .light-mode .social-links {
 
-    display: flex;
-    flex-direction:row;
-
     width: 80px;
     height: 80px;
 
-    margin-top: 470px;
+    display: block;
 
-    margin-left: 1%;
-    margin-right: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
+}
+
+#s1 {
+
+    background-image: url(../Pictures/gitw.png);
+
+}
+
+#s2 {
+
+    background-image: url(../Pictures/linw.png);
+}
+
+#s3 {
+
+    background-image: url(../Pictures/pow.png);
+}
+
+.light-mode #s1 {
+
+    background-image: url(../Pictures/github.png);
+}
+
+.light-mode #s2 {
+
+    background-image: url(../Pictures/linkedin.png);
+}
+
+.light-mode #s3 {
+
+    background-image: url(../Pictures/email.png);
 }
 
 
