@@ -1,14 +1,15 @@
 
 const button = document.getElementById("themeButton");
 
-// gespeichertes Theme prüfen
-if (localStorage.getItem("theme") === "light") {
+// Theme nur für diese Browser-Sitzung merken
+if (sessionStorage.getItem("theme") === "light") {
 
     document.body.classList.add("light-mode");
     button.textContent = "☀️";
 
 } else {
 
+    document.body.classList.remove("light-mode");
     button.textContent = "🌙";
 
 }
@@ -21,9 +22,7 @@ window.addEventListener("load", function () {
         document.body.classList.add("light-mode");
 
         requestAnimationFrame(() => {
-
             document.body.classList.remove("light-mode");
-
         });
 
     }
@@ -37,12 +36,12 @@ button.onclick = function () {
 
     if (document.body.classList.contains("light-mode")) {
 
-        localStorage.setItem("theme", "light");
+        sessionStorage.setItem("theme", "light");
         button.textContent = "☀️";
 
     } else {
 
-        localStorage.setItem("theme", "dark");
+        sessionStorage.setItem("theme", "dark");
         button.textContent = "🌙";
 
     }
