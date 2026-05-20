@@ -195,7 +195,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .mainp {
 
-    min-height: 94.6vh;
+    min-height: 94.7vh;
     max-width: 100%;  
 
     background-image:url(../Pictures/maind.png);
@@ -210,7 +210,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 .light-mode .mainp {
 
-    min-height: 94.6vh;
+    min-height: 94.7vh;
     max-width: 100%;  
 
     background-image:url(../Pictures/mainw.png);
