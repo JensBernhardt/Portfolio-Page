@@ -5,10 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="projects1.css">
+    
     <link rel="manifest" href="../Main/manifest.json">
 
     <title>Projects</title>
+
+    <!-- ---------------------Preload von den Nächten Seiten + deren CSS----------------------- -->
+
+    <!-- CSS der aktuellen Seite -->
+    <link rel="stylesheet" href="projects1.css">
+
+    <!-- Seiten vorladen -->
+    <link rel="prefetch" href="../index.html">
+    <link rel="prefetch" href="../Sites2/aboutme.html">
+    <link rel="prefetch" href="../Sites2/projects.html">
+    <link rel="prefetch" href="../Sites2/Skills.html">
+
+    <!-- CSS-Dateien der anderen Seiten vorladen -->
+    <link rel="preload" href="../index.css" as="style">
+    <link rel="preload" href="../Sites2/aboutme.css" as="style">
+    <link rel="preload" href="../Sites2/projects.css" as="style">
+    <link rel="preload" href="../Sites2/Skills.css" as="style">
+
+    <!-- Logo vorladen -->
+    <link rel="preload" href="../Pictures/icon.png" as="image">
+
+    <!-- ------------------------------------------------------------------------------------- -->
+    
 </head>
 <body id="body1">
 
@@ -22,13 +45,13 @@
 
             <button id="themeButton">☀️</button>
 
-            <a  rel="prefetch" href="../Sites2/aboutme.html" class="nav2">Jens Peter Bernhardt</a>
+            <a href="../Sites2/aboutme.html" class="nav2">Jens Peter Bernhardt</a>
 
             
-            <a rel="prefetch" href="../Main/index.html" class="nav3">Home</a>
+            <a href="../index.html" class="nav3">Home</a>
 
-            <a rel="prefetch" href="../Sites2/projects.html" class="nav">Projects</a>
-            <a rel="prefetch" href="../Sites2/Skills.html" class="nav">Skills</a>
+            <a href="../Sites2/projects.html" class="nav">Projects</a>
+            <a href="../Sites2/Skills.html" class="nav">Skills</a>
 
             <a href="index.html" class="nav-logo">
             <img src="../Pictures/icon.png" alt="Logo" />

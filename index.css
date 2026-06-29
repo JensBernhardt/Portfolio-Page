@@ -47,7 +47,7 @@ h1 {
     
     box-shadow: 4px 4px 10px rgba(241, 239, 239, 0.4);
 
-    background-image:url(../Pictures/bla.png);
+    background-image:url(Pictures/bla.png);
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat; 
@@ -70,7 +70,7 @@ h1 {
     
     box-shadow: 4px 4px 10px rgba(26, 25, 25, 0.4);
 
-    background-image:url(../Pictures/wh.png);
+    background-image:url(Pictures/wh.png);
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat; 
@@ -198,7 +198,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     min-height: 94.7vh;
     max-width: 100%;  
 
-    background-image:url(../Pictures/maind.png);
+    background-image:url(Pictures/maind.png);
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat;
@@ -213,7 +213,7 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
     min-height: 94.7vh;
     max-width: 100%;  
 
-    background-image:url(../Pictures/mainw.png);
+    background-image:url(Pictures/mainw.png);
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat; 
@@ -270,33 +270,33 @@ box-shadow: 4px 10px 15px rgba(20, 20, 20, 0.4);
 
 #s1 {
 
-    background-image: url(../Pictures/gitw.png);
+    background-image: url(Pictures/gitw.png);
 
 }
 
 #s2 {
 
-    background-image: url(../Pictures/linw.png);
+    background-image: url(Pictures/linw.png);
 }
 
 #s3 {
 
-    background-image: url(../Pictures/pow.png);
+    background-image: url(Pictures/pow.png);
 }
 
 .light-mode #s1 {
 
-    background-image: url(../Pictures/github.png);
+    background-image: url(Pictures/github.png);
 }
 
 .light-mode #s2 {
 
-    background-image: url(../Pictures/linkedin.png);
+    background-image: url(Pictures/linkedin.png);
 }
 
 .light-mode #s3 {
 
-    background-image: url(../Pictures/email.png);
+    background-image: url(Pictures/email.png);
 }
 
 
